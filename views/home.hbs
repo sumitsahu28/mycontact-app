@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/javascripts/home.js"></script> 
+    <h1>{{title}}</h1>
+   <p>Welcome </p>
+   <style>
+       th{
+           padding-right: 20px
+       }
+    </style>
+    </head>
+   <body>
+         <input type = "text" name = "name" id="name" placeholder="name">  
+         <input type = "text" name = "email" id="email" placeholder="email">
+         <input type = "text" name = "number" id="number" placeholder="phone no">
+         <input type = "text" name = "address" id="address" placeholder="address">
+         
+         <button value = "Submit" onclick="addCon()">Save</button>
+         <br>
+         <br>
+      <table class = "contacts_table">
+          <thead>
+                <tr>
+                        <th> Index </th>
+                        <th> Name </th>
+                        <th> Email </th>
+                        <th> Phone_Number </th>
+                        <th> Address </th>
+                        <th> Edit </th>
+                        <th> Delete</th>
+                </tr>   
+          </thead>  
+          <tbody id="contact_list" >
+          
+          </tbody>   
+			 <br> 
+			
+      </table>    
+   </body>
+</html>
